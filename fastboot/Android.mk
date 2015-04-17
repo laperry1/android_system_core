@@ -62,7 +62,8 @@ LOCAL_STATIC_LIBRARIES := \
     libutils \
     liblog \
     libz \
-    libbase
+    libbase \
+    liblz4-host
 
 ifneq ($(HOST_OS),windows)
 LOCAL_STATIC_LIBRARIES += libselinux
