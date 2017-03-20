@@ -3,7 +3,7 @@ LOCAL_PATH:= $(call my-dir)
 
 common_cflags := \
     -std=gnu99 \
-    -Werror -Wno-unused-parameter \
+    -Wno-unused-parameter \
     -I$(LOCAL_PATH)/upstream-netbsd/include/ \
     -include bsd-compatibility.h \
 
