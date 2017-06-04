@@ -1,0 +1,13 @@
+--- logd/LogAudit.cpp
++++ logd/LogAudit.cpp
+@@ -67,8 +67,10 @@ bool LogAudit::onDataAvailable(SocketClient *cli) {
+         return false;
+     }
+ 
++#if 0
+     logPrint("type=%d %.*s",
+         rep.nlh.nlmsg_type, rep.nlh.nlmsg_len, rep.data);
++#endif
+ 
+     return true;
+ }
